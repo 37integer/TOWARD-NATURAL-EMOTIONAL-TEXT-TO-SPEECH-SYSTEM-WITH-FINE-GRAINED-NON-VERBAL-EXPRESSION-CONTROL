@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Demo Page</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        h1, h2 { color: #333; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #555; margin-top: 30px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f8f8f8; }
+        audio { width: 100%; }
+    </style>
+</head>
+<body>
+
+    <h1>TOWARD NATURAL EMOTIONAL TEXT-TO-SPEECH SYSTEM WITH FINE-GRAINED NON-VERBAL EXPRESSION CONTROL</h1>
+    <h2>Wangzixi Zhou, Bagus Tris Atmaja, Sakriani Sakti</h2>
+    <h3>Nara Institute of Science and Technology, Japan</h3>
+    
+
+    <h2>Comparison between (1) Only Verbal, (2) Verbal + Coarse-grained NV, (3) Verbal + Fine-Grained NV</h2>
+    
+    <h3>Happy</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Audio Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Only verbal </td>
+                <td>
+                    <audio controls src="./emotion_demo/verbal_0.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>Verbal + Coarse-grained NV</td>
+                <td>
+                    <audio controls src="./emotion_demo/NV_base_0.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>Verbal + Fine-grained NV (Proposed)</td>
+                <td>
+                    <audio controls src="./emotion_demo/non_verbal_0.wav"></audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Preference Evaluation</h2>
+
+    <h3>happy</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Non-verbal expression</th>
+                <th>Audio Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> (cheering) Wo ho </td>
+                <td>
+                    <audio controls src="./emotion_demo/happy_0.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td> (cheering) Yo </td>
+                <td>
+                    <audio controls src="./emotion_demo/happy_2.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td> (Laughter-open) ha ha  </td>
+                <td>
+                    <audio controls src="./emotion_demo/happy_3.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td> (Laughter-closed) ha ha </td>
+                <td>
+                    <audio controls src="./emotion_demo/happy_4.wav"></audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Sad</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Non-verbal expression</th>
+                <th>Audio Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>(crying) whep </td>
+                <td>
+                    <audio controls src="./emotion_demo/sad_6.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>(crying) sneeze </td>
+                <td>
+                    <audio controls src="./emotion_demo/sad_7.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>(crying) wuuuuuuu whep </td>
+                <td>
+                    <audio controls src="./emotion_demo/sad_5.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>(crying) wuuuuuuu </td>
+                <td>
+                    <audio controls src="./emotion_demo/sad_8.wav"></audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+</body>
+</html>
